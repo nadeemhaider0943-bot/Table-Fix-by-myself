@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Table Header Overlap Fixed - Free CSS Solution</title>
+<style>
+body {font-family: Arial; max-width: 800px; margin: 40px auto; padding: 20px; background: #f5f5f5}
+.box {background: white; padding: 20px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.1)}
+h2 {color: #d32f2f}
+img {width: 100%; border: 2px solid #ddd; border-radius: 8px}
+pre {background: #263238; color: #aed581; padding: 15px; border-radius: 8px; overflow-x: auto}
+.btn {background: #25D366; color: white; padding: 14px 28px; border-radius: 8px; text-decoration: none; display: inline-block; font-weight: bold; margin-top: 15px}
+.btn:hover {background: #128C7E}
+</style>
+</head>
+<body>
+
+<div class="box">
+<h2>Problem: Table header overlaps content on mobile</h2>
+<p>Client: Rawal Health Care - Pricing table broke on iPhone + Android</p>
+<img src="broken.jpeg" alt="Broken table overlap issue" style="max-width: 400px; width: 100%; height: auto; display: block; margin: 20px auto;">
+</div>
+
+<div class="box">
+<h2>Solution: 3 lines of CSS added</h2>
+<pre>
+thead th {
+  position: sticky;
+  top: 0;
+  background: #d32f2f; /* Match header color */
+  z-index: 10;
+}
+</pre>
+<p>Result: Header now sticks on top with solid background. No more overlap.</p>
+</div>
+
+<div class="box" style="text-align:center">
+<h2>Need this fix for your website?</h2>
+<p>I can patch your table in 15 minutes</p>
+<a href="https://wa.me/923346766851?text=Hi%20I%20saw%20your%20table%20fix%20page" class="btn">Message Me on WhatsApp</a>
+</div>
+
+</body>
+</html>
